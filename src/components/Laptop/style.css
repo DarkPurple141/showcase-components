@@ -1,0 +1,96 @@
+:root {
+    --background: #e5e5e5;
+    --background-secondary: #f7f7f7;
+    --border-radius: 6px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.frame {
+    margin: 10px 0;
+    width: 100%;
+    height: 500px;
+    background-color: var(--background);
+    border-radius: var(--border-radius);
+}
+
+.upper {
+    display: inline-flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+.circle {
+    border-radius: 50%;
+    height: 12.5px;
+    width: 12.5px;
+    opacity: 0.8;
+    margin: 0 4px;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: orange;
+}
+
+.green {
+    background-color: limegreen;
+}
+
+.upper-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 6px 0;
+}
+
+.tab {
+    width: 125px;
+    margin: 10px 10px 0;
+    padding-top: 0;
+    padding-bottom: 20px;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    background-color: var(--background-secondary);
+}
+
+.lower {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    background-color: var(--background-secondary);
+    height: 45px;
+    border-bottom: 1px solid var(--background);
+}
+
+.lower-controls {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.url {
+    font-size: 0.8em;
+    padding: 5px 10px;
+    margin: 0 10px;
+    border-radius: var(--border-radius);
+    flex: 1;
+    background-color: var(--background);
+}
+
+.nav-control {
+    margin: 0 6px;
+    background-color: var(--background-secondary);
+}
+
+
+
