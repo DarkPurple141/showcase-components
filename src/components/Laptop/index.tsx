@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Icon from '../Icon'
 import './style.css'
 
 interface Props {
@@ -29,7 +30,7 @@ export default ({
             <div className="lower-controls">
                 {['back', 'forward', 'refresh']
                     .map(control => (
-                        <div key={control} className='nav-control'>+</div>
+                        <Icon key={control} name={control} className='nav-control' />
                     ))
                 }
             </div>
