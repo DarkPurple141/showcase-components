@@ -6,15 +6,22 @@ import { Laptop, Phone } from '.'
 const noFrame = {
     border: 'none',
     width: '100%',
-    height: '100%'
+    height: '100%',
+    borderWidth: '0px',
 }
+
+const url = 'https://example.com'
 
 const Example = () => (
     <main>
-        <Laptop>
-            <iframe style={noFrame} src="https://smartcourse.me"></iframe>
+        <h2>Laptop</h2>
+        <Laptop url={url} htmlAttributes={{style: { height: '250px' }}}>
+            <iframe style={noFrame} src={url}></iframe>
         </Laptop>
-        <Phone />
+        <h2>Phone</h2>
+        <Phone>
+            <iframe style={noFrame} src={url}></iframe>
+        </Phone>
     </main>
 )
 

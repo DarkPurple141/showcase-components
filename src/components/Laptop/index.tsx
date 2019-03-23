@@ -1,24 +1,30 @@
 import * as React from 'react'
 import Icon from '../Icon'
 import './style.css'
+import '../global.css'
 
 interface Props {
     title?: string,
     url?: string,
     children: React.ReactNode,
+    isMonochrome?: boolean,
+    htmlAttributes?: any,
 }
 
 export default ({
     title,
     url = 'https://google.com',
-    children
+    isMonochrome = false,
+    children,
+    htmlAttributes = {}
 }: Props) => (
-    <div className="frame">
+    <div className="frame showcase" {...htmlAttributes}>
+        <div className="controls">
         <div className="upper">
             <div className="upper-controls">
-                {['red', 'yellow', 'green']
-                    .map(color => (
-                        <div key={color} className={`circle ${color}`}></div>
+                {[{ icon: 'close', color: isMonochrome ? 'grey' : 'red'}, { icon: 'min', color: isMonochrome ? 'grey' : 'yellow'}, { icon: 'max', color: isMonochrome ? 'grey' : 'green'}]
+                    .map(({ icon, color }) => (
+                        <div key={icon} className={`circle ${color}`}></div>
                     ))
                 }
             </div>
@@ -38,6 +44,9 @@ export default ({
                 {url}
             </div>
         </div>
-        { children }
+        </div>
+        <div className="children">
+            { children }
+        </div>
     </div>
 )

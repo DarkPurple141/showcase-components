@@ -1,0 +1,12 @@
+:root {
+    --background: #e5e5e5;
+    --background-secondary: #f7f7f7;
+    --icon-color: #aaa;
+    --border-radius: 6px;
+    --phone-black: #222;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+}
+
+.showcase {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
