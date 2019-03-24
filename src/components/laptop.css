@@ -1,12 +1,4 @@
-div {
-    box-sizing: border-box;
-}
-
-svg {
-    fill: var(--icon-color);
-}
-
-.frame {
+.showcase-laptop__frame {
     position: relative;
     margin: 10px 0;
     width: 100%;
@@ -15,23 +7,23 @@ svg {
     overflow: hidden;
 }
 
-.controls {
+.showcase-laptop__controls {
     background-color: var(--background);
 }
 
-.children {
+.showcase-laptop__children {
     overflow-y: scroll;
     height: 100%;
 }
 
-.upper {
+.showcase-laptop__upper {
     display: inline-flex;
     align-items: center;
     padding: 0 10px;
     width: 100%;
 }
 
-.circle {
+.showcase-laptop__circle {
     border-radius: 50%;
     height: 12.5px;
     width: 12.5px;
@@ -39,26 +31,14 @@ svg {
     margin: 0 4px;
 }
 
-.red {
-    background-color: red;
-}
-
-.yellow {
-    background-color: orange;
-}
-
-.green {
-    background-color: limegreen;
-}
-
-.upper-controls {
+.showcase-laptop__upper-controls {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 6px 0;
 }
 
-.tab {
+.showcase-laptop__tab {
     width: 125px;
     margin: 10px 10px 0;
     padding-top: 5px;
@@ -68,7 +48,7 @@ svg {
     background-color: var(--background-secondary);
 }
 
-.lower {
+.showcase-laptop__lower {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -78,13 +58,13 @@ svg {
     border-bottom: 1px solid var(--background);
 }
 
-.lower-controls {
+.showcase-laptop__lower-controls {
     align-items: center;
     display: flex;
     flex-direction: row;
 }
 
-.url {
+.showcase-laptop__url {
     font-size: 0.8em;
     padding: 5px 10px;
     margin: 0 10px;
@@ -93,10 +73,7 @@ svg {
     background-color: var(--background);
 }
 
-.nav-control {
+.showcase-laptop__nav-control {
     margin: 0 6px;
     background-color: var(--background-secondary);
 }
-
-
-

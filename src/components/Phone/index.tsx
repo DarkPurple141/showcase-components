@@ -1,5 +1,5 @@
 import * as React from 'react'
-import './style.css'
+import '../phone.css'
 import '../global.css'
 
 interface Props {
@@ -7,16 +7,16 @@ interface Props {
 }
 
 export default ({ children }: Props) => (
-    <div className="phone showcase">
-        <div className="inner-frame">
-            <div className="upper-phone">
-                <div className="phone-speaker"></div>
+    <div className="showcase-phone__phone showcase">
+        <div className="showcase-phone__inner-frame">
+            <div className="showcase-phone__upper-phone">
+                <div className="showcase-phone__phone-speaker"></div>
             </div>
-            <div className="children">
+            <div className="showcase-phone__children">
                 {children}
             </div>
-            <div className="lower-phone">
-                <div className="home-button"></div>
+            <div className="showcase-phone__lower-phone">
+                <div className="showcase-phone__home-button"></div>
             </div>
         </div>
     </div>

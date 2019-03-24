@@ -2,7 +2,7 @@ const path = require('path')
 
 module.exports = {
     entry: './src/example.tsx',
-    mode: process.env.NODE_ENV || 'development',
+    mode: process.env.NODE_ENV || 'production',
     module: {
         rules: [
             {

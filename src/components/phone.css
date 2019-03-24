@@ -1,4 +1,4 @@
-.phone {
+.showcase-phone__phone {
     border-color: var(--phone-black);
     background-color: var(--phone-black);
     border-radius: 10px;
@@ -9,7 +9,7 @@
     margin: auto;
 }
 
-.upper-phone, .lower-phone {
+.showcase-phone__upper-phone, .showcase-phone__lower-phone {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,13 +17,13 @@
     height: 40px;
 }
 
-.phone-speaker {
+.showcase-phone__phone-speaker {
     height: 1px;
     width: 25%;
     background-color: #888;
 }
 
-.home-button {
+.showcase-phone__home-button {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -31,11 +31,11 @@
     margin: auto;
 }
 
-.children {
+.showcase-phone__children {
     flex: 1;
 }
 
-.inner-frame {
+.showcase-phone__inner-frame {
     display: flex;
     flex-direction: column;
     width: 100%;

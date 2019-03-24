@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Icon from '../Icon'
-import './style.css'
+import '../laptop.css'
 import '../global.css'
 
 interface Props {
@@ -18,34 +18,34 @@ export default ({
     children,
     htmlAttributes = {}
 }: Props) => (
-        <div className="frame showcase" {...htmlAttributes}>
-            <div className="controls">
-                <div className="upper">
-                    <div className="upper-controls">
+        <div className="showcase-laptop__frame showcase" {...htmlAttributes}>
+            <div className="showcase-laptop__controls">
+                <div className="showcase-laptop__upper">
+                    <div className="showcase-laptop__upper-controls">
                         {[{ icon: 'close', color: isMonochrome ? 'grey' : 'red' }, { icon: 'min', color: isMonochrome ? 'grey' : 'yellow' }, { icon: 'max', color: isMonochrome ? 'grey' : 'green' }]
                             .map(({ icon, color }) => (
-                                <div key={icon} className={`circle ${color}`}></div>
+                                <div key={icon} className={`showcase-laptop__circle ${color}`}></div>
                             ))
                         }
                     </div>
-                    <div className="tab">
+                    <div className="showcase-laptop__tab">
                         {title}
                     </div>
                 </div>
-                <div className="lower">
-                    <div className="lower-controls">
+                <div className="showcase-laptop__lower">
+                    <div className="showcase-laptop__lower-controls">
                         {['back', 'forward', 'refresh']
                             .map(control => (
                                 <Icon key={control} name={control} className='nav-control' />
                             ))
                         }
                     </div>
-                    <div className="url">
+                    <div className="showcase-laptop__url">
                         {url}
                     </div>
                 </div>
             </div>
-            <div className="children">
+            <div className="showcase-laptop__children">
                 {children}
             </div>
         </div>

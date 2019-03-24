@@ -10,3 +10,23 @@
 .showcase {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
+
+div {
+    box-sizing: border-box;
+}
+
+svg {
+    fill: var(--icon-color);
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: orange;
+}
+
+.green {
+    background-color: limegreen;
+}
