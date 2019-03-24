@@ -1,4 +1,5 @@
 node_modules/
 src/
+example/
 package-lock.json
 tsconfig.json

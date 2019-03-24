@@ -4,7 +4,8 @@
   "description": "A small React library for displaying previews/iframes/images of applications and websites inside browser and phone-like containers.",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc && echo 'Built to /dist'",
+    "build": "rimraf dist && tsc && echo 'Built to /dist'",
+    "build:docs": "webpack",
     "watch": "webpack -w"
   },
   "repository": {
@@ -21,12 +22,16 @@
   "author": "Alex Hinds <alex.hinds141@gmail.com>",
   "license": "ISC",
   "types": "index.d.ts",
+  "peerDependencies": {
+    "react": "^16.8.4"
+  },
   "devDependencies": {
     "@types/react": "^16.8.8",
     "@types/react-dom": "^16.8.3",
     "css-loader": "^2.1.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "rimraf": "^2.6.3",
     "style-loader": "^0.23.1",
     "ts-loader": "^5.3.3",
     "typescript": "^3.3.4000",
