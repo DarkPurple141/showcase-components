@@ -1,6 +1,6 @@
 {
   "name": "showcase-components",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A small React library for displaying previews/iframes/images of applications and websites inside browser and phone-like containers.",
   "homepage": "https://alhinds.com/showcase-components",
   "main": "dist/index.js",
