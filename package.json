@@ -24,7 +24,7 @@
   ],
   "author": "Alex Hinds <alex.hinds141@gmail.com>",
   "license": "ISC",
-  "types": "index.d.ts",
+  "types": "dist/index.d.ts",
   "peerDependencies": {
     "react": "^16.8.4"
   },
