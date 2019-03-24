@@ -41,5 +41,7 @@ const MyAwesomePreviewAsJsx = (props) => (
 )
 ```
 
+See the typings file for a fuller description of properties that are exposed.
+
 ## Issues
 Please feel free to lodge an issue at the public git repository.
