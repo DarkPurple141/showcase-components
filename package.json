@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "rimraf dist && tsc && echo 'Built to /dist'",
+    "prettify": "prettier \"src/**/*\"",
     "build:docs": "webpack",
     "watch": "webpack -w",
     "preversion": "npm run build && npm run build:docs"
@@ -30,6 +31,7 @@
     "@types/react": "^16.8.8",
     "@types/react-dom": "^16.8.3",
     "css-loader": "^2.1.1",
+    "prettier": "1.16.4",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "rimraf": "^2.6.3",

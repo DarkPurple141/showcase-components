@@ -13,7 +13,7 @@ export default ({ children }: Props) => (
                 <div className="phone-speaker"></div>
             </div>
             <div className="children">
-                { children }
+                {children}
             </div>
             <div className="lower-phone">
                 <div className="home-button"></div>
