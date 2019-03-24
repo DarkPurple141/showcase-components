@@ -6,7 +6,8 @@
   "scripts": {
     "build": "rimraf dist && tsc && echo 'Built to /dist'",
     "build:docs": "webpack",
-    "watch": "webpack -w"
+    "watch": "webpack -w",
+    "preversion": "npm run build && npm run build:docs"
   },
   "repository": {
     "url": "https://github.com/DarkPurple141/showcase-components"
