@@ -3,11 +3,12 @@ import '../phone.css'
 import '../global.css'
 
 interface Props {
-    children?: React.ReactNode
+    children?: React.ReactNode,
+    className?: string,
 }
 
-export default ({ children }: Props) => (
-    <div className="showcase-phone__phone showcase">
+export default ({ children, className }: Props) => (
+    <div className={`showcase-phone__phone showcase ${className ? className : ''}`}>
         <div className="showcase-phone__inner-frame">
             <div className="showcase-phone__upper-phone">
                 <div className="showcase-phone__phone-speaker"></div>

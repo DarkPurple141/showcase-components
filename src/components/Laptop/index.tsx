@@ -4,10 +4,11 @@ import '../laptop.css'
 import '../global.css'
 
 interface Props {
+    children?: React.ReactNode,
     title?: string,
     url?: string,
-    children: React.ReactNode,
     isMonochrome?: boolean,
+    className?: string,
     htmlAttributes?: any,
 }
 
@@ -16,9 +17,10 @@ export default ({
     url = 'https://google.com',
     isMonochrome = false,
     children,
+    className,
     htmlAttributes = {}
 }: Props) => (
-        <div className="showcase-laptop__frame showcase" {...htmlAttributes}>
+        <div className={`showcase-laptop__frame showcase ${className ? className : ''}`} {...htmlAttributes}>
             <div className="showcase-laptop__controls">
                 <div className="showcase-laptop__upper">
                     <div className="showcase-laptop__upper-controls">
