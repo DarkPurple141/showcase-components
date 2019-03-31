@@ -8,6 +8,7 @@
     "build": "rimraf dist && tsc && cp -r src/**/*.css dist/components",
     "prettify": "prettier \"src/**/*\"",
     "build:docs": "build-storybook -c .storybook -o example",
+    "deploy": "npm run build:docs",
     "preversion": "npm run build && npm run build:docs",
     "watch": "start-storybook -p 6006"
   },
