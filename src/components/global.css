@@ -30,3 +30,7 @@ svg {
 .green {
     background-color: limegreen;
 }
+
+.grey {
+    background-color: var(--icon-color);
+}
