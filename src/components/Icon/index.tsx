@@ -5,28 +5,25 @@ import forward from './forward-arrow'
 import refresh from './refresh'
 
 interface IconMap<T> {
-    [key: string]: T;
+	[key: string]: T
 }
 
 const iconMap: IconMap<React.FunctionComponent> = {
-    back,
-    forward,
-    refresh
+	back,
+	forward,
+	refresh
 }
 
 interface IconProps {
-    className?: string,
-    name: string
+	className?: string
+	name: string
 }
 
-export default ({ 
-    name,
-    className
-}: IconProps) => {
-    const Icon = iconMap[name]
-    return (
-        <div className={className}>
-            <Icon/>
-        </div>
-    )
+export default ({ name, className }: IconProps) => {
+	const Icon = iconMap[name]
+	return (
+		<div className={className}>
+			<Icon />
+		</div>
+	)
 }

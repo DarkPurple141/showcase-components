@@ -1,6 +1,7 @@
 # Showcase Components (React)
 
 [![npm Version][bd_npm_shield_url]][bd_npm_url]
+[![Build Status](https://travis-ci.com/DarkPurple141/showcase-components.svg?branch=master)](https://travis-ci.com/DarkPurple141/showcase-components)
 
 
 [bd_npm_url]: http://www.npmjs.org/package/showcase-components

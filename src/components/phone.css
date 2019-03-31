@@ -32,7 +32,8 @@
 }
 
 .showcase-phone__children {
-    flex: 1;
+    overflow-y: scroll;
+    height: 100%;
 }
 
 .showcase-phone__inner-frame {

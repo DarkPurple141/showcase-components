@@ -1,5 +1,8 @@
 const path = require('path')
 
+// this stripped down config will build the component library
+// if you're unsure how to configure these things yourself, look at 
+// webpack docs.
 module.exports = {
     entry: './src/example.tsx',
     mode: process.env.NODE_ENV || 'production',

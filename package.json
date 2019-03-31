@@ -7,9 +7,9 @@
   "scripts": {
     "build": "rimraf dist && tsc && cp -r src/**/*.css dist/components",
     "prettify": "prettier \"src/**/*\"",
-    "build:docs": "webpack",
-    "watch": "webpack -w",
-    "preversion": "npm run build && npm run build:docs"
+    "build:docs": "build-storybook -c .storybook -o example",
+    "preversion": "npm run build && npm run build:docs",
+    "watch": "start-storybook -p 6006"
   },
   "repository": {
     "url": "https://github.com/DarkPurple141/showcase-components"
@@ -20,7 +20,8 @@
   "keywords": [
     "showcase",
     "components",
-    "library"
+    "library",
+    "react"
   ],
   "author": "Alex Hinds <alex.hinds141@gmail.com>",
   "license": "ISC",
@@ -29,17 +30,27 @@
     "react": "^16.8.4"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@storybook/addon-actions": "^5.0.5",
+    "@storybook/addon-info": "^5.0.5",
+    "@storybook/addon-links": "^5.0.5",
+    "@storybook/addons": "^5.0.5",
+    "@storybook/react": "^5.0.5",
     "@types/react": "^16.8.8",
     "@types/react-dom": "^16.8.3",
+    "@types/storybook__addon-info": "^4.1.1",
+    "@types/storybook__react": "^4.0.1",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.5",
     "css-loader": "^2.1.1",
     "prettier": "1.16.4",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4",
+    "react-docgen-typescript-webpack-plugin": "^1.1.0",
     "rimraf": "^2.6.3",
     "style-loader": "^0.23.1",
-    "ts-loader": "^5.3.3",
     "typescript": "^3.3.4000",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
-  }
+  },
+  "dependencies": {}
 }

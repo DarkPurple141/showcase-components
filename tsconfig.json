@@ -7,8 +7,9 @@
       "noImplicitAny": true,
       "removeComments": true,
       "declaration": true,
+      "noUnusedLocals": true,
       "jsx": "react",
-      "lib": [ "es2015", "dom" ]
+      "lib": ["es5", "es6", "es7", "dom"],
     },
     "files": [
       "src/index.ts"
