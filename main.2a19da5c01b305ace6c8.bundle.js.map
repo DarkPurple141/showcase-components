@@ -1,0 +1,1 @@
+{"version":3,"file":"main.2a19da5c01b305ace6c8.bundle.js","sources":["webpack:///./stories/constants.ts"],"sourcesContent":["export const IFRAME_URL = 'https://example.com'\nexport const IMAGE_URL = 'https://picsum.photos/1000?random'\nexport const IMAGE_URL_MOBILE = 'https://picsum.photos/300/700?random'"],"mappings":"AAAA","sourceRoot":""}
